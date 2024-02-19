@@ -116,6 +116,7 @@ async function displayMovieDetails() {
 // Display 20 most popular TV Shows
 
 async function displayPopularShows() {
+    console.log('The Display Shows Function Should Run Here... TEST TEST TEST!');
     const { results } = await fetchAPIData('tv/popular');
     console.log(results);
 
@@ -469,20 +470,16 @@ function init() {
     switch (global.currentPage) {
         case '/': 
         case '/index.html':
-            console.log('Home');
             displayPopularMovies();
             displaySlider();
             break;
         case '/shows.html':
-            console.log('Shows');
             displayPopularShows();
             break;
         case '/movie-details.html':
-            console.log('Movie-Details');
             displayMovieDetails();
             break;
         case '/tv-details.html':
-            console.log('TV-Details');
             displayShowDetails();
             break;
         case '/search.html':
