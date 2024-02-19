@@ -42,8 +42,7 @@ async function displayPopularMovies() {
               <small class="text-muted">Release: ${movie.release_date}</small>
             </p>
           </div>`
-        const popularMovies = document.getElementById('popular-movies');
-        popularMovies.appendChild(div);
+        document.querySelector('#popular-movies').appendChild(div);
     })
 }
 
@@ -145,8 +144,7 @@ async function displayPopularShows() {
               <small class="text-muted">Release: ${show.first_air_date}</small>
             </p>
           </div>`
-        const popularMovies = document.getElementById('popular-shows');
-        popularMovies.appendChild(div);
+        document.querySelector('#popular-shows').appendChild(div);
     })
 }
 
